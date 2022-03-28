@@ -9,9 +9,11 @@ import './App.css';
 function App() {
   return (
     <div style={{ margin: '120px' }}>
-      <Step1 />
-      <Step2 />
-      <Step3 />
+      <Wizard>
+        <Step1 />
+        <Step2 />
+        <Step3 />
+      </Wizard>
     </div>
   );
 }
