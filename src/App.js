@@ -6,11 +6,14 @@ import { Step3 } from './Steps/Step3';
 
 import './App.css';
 
+const Header = () => <p>I am the header component</p>;
+const Footer = () => <p>I am the footer component</p>;
+
 function App() {
   return (
     <div style={{ margin: '120px' }}>
-      <Wizard>
-        <Step1 />
+    <Wizard startIndex={0} header={<Header />} footer={<Footer />}>
+      <Step1 />
         <Step2 />
         <Step3 />
       </Wizard>
